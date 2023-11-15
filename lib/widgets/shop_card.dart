@@ -42,7 +42,7 @@ class ShopCard extends StatelessWidget {
           }
           else if (item.name == "Logout") {
             final response = await request.logout(
-                "http://localhost:8000/auth/logout-json/");
+                "http://localhost:8000/auth/logout/");
             String message = response["message"];
             if (response['status']) {
               String uname = response["username"];
